@@ -4,20 +4,25 @@ the four codes, display the translated version of "Hello World" for the given la
 window. If the user enters anything but those four language codes, the application should default to English.
 The result should be (for example): Hello World translated in French is: Bonjour le monde. */
 
-const prompt=require("prompt-sync")({sigint:true});
+// const prompt=require("prompt-sync")({sigint:true});
 
 let languageCode = prompt('Enter a language code ("es", "de", "en", or "fr"): ');
 
 if (languageCode == "es") {
-    console.log('Hello World translated in Spanish is: Hola Mundo.');
+    // console.log('Hello World translated in Spanish is: Hola Mundo.');
+    alert('Hello World translated in Spanish is: Hola Mundo.');
 } else if (languageCode == "de") {
-    console.log('Hello World translated in German is: Hallo Welt.');
+    // console.log('Hello World translated in German is: Hallo Welt.');
+    alert('Hello World translated in German is: Hallo Welt.');
 } else if (languageCode == "en") {                         // default language
-    console.log('Hello World translated in English is: Hello World.');
+    // console.log('Hello World translated in English is: Hello World.');
+    alert('Hello World translated in English is: Hello World.');
 } else if (languageCode == "fr") {
-    console.log('Hello World translated in French is: Bonjour le monde.');
+    // console.log('Hello World translated in French is: Bonjour le monde.');
+    alert('Hello World translated in French is: Bonjour le monde.');
 } else {
-    console.log('Hello World translated in English is: Hello World.');
+    // console.log('Hello World translated in English is: Hello World.');
+    alert('Hello World translated in English is: Hello World.');
 } ;
 
 document.write('Hello World translated in Spanish is: Hola Mundo.');     // display the translated message in Spanish
